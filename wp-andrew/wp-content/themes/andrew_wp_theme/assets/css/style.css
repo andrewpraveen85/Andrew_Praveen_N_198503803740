@@ -1,0 +1,51 @@
+.bg-img {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.05)) , url("../img/Home-Page_0006s_0001_Image-1.png");
+  min-height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #1da2d5;
+  color: black;
+}
+
+.btn-outline-booking{
+   background-color: #1da2d5; 
+   background-image: url("../img/Home-Page_0005s_0000s_0001_Rectangle-1-copy-2.png");
+}
+
+.btn_accom{
+    color: white;
+    background-image: url("../img/Home-Page_0003s_0000s_0003_Rectangle-5-copy-5.png");
+}
+
+.grey-bg{
+    color: white;
+    background-image: url("../img/Home-Page_0002s_0003_Rectangle-9-copy.png");
+     background-repeat: repeat-x;
+     height: 55px;
+     padding-bottom: 10px;
+     margin-bottom: 10px;
+}

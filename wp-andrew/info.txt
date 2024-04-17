@@ -1,0 +1,11 @@
+1. Do you know about GIT?
+	Yes. More than 8 years.
+
+2. Do you know about SCSS?
+	Yes.
+
+3. Do you know about NPM commands?
+	Yes. I worked with Node Js.
+
+4. Have you ever developed your own WP plugins and themes?
+	Yes. I had builded Custom theme (from UI provided from FE devs) and Plugins.
