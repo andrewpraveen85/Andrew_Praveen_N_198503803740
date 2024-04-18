@@ -1,0 +1,25 @@
+<VirtualHost *:80>
+	ServerName yii.andrew.local
+	DocumentRoot "C:/xampp/htdocs/Andrew_Praveen_N_198503803740/yii-andrew/frontend/web"
+	<Directory "C:/xampp/htdocs/Andrew_Praveen_N_198503803740/yii-andrew/frontend/web">
+		RewriteEngine on
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteCond %{REQUEST_FILENAME} !-d
+		RewriteRule . index.php
+		DirectoryIndex index.php
+		Require all granted
+	</Directory>
+</VirtualHost>
+
+<VirtualHost *:80>
+	ServerName wordpress.andrew.local
+	DocumentRoot "C:/xampp/htdocs/Andrew_Praveen_N_198503803740/wp-andrew"
+	<Directory "C:/xampp/htdocs/Andrew_Praveen_N_198503803740/wp-andrew">
+		RewriteEngine on
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteCond %{REQUEST_FILENAME} !-d
+		RewriteRule . index.php
+		DirectoryIndex index.php
+		Require all granted
+	</Directory>
+</VirtualHost>
