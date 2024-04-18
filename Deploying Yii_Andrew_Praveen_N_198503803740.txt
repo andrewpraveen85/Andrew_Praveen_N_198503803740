@@ -1,0 +1,18 @@
+Step 1. Unzip Yii_Andrew_Praveen_N_198503803740.zip in htdocs in xamp server or www in wamp server.
+Step 2. Rename the folder as yii-andrew
+Step 2. In mysql create db yii_andrew_db, and import the yii_andrew_db.sql
+Step 3. Create a virtual host as below code.
+	<VirtualHost *:80>
+		ServerName yii.andrew.local
+		DocumentRoot "C:/xampp/htdocs/Andrew_Praveen_N_198503803740/yii-andrew/frontend/web"
+		<Directory "C:/xampp/htdocs/Andrew_Praveen_N_198503803740/yii-andrew/frontend/web">
+			RewriteEngine on
+			RewriteCond %{REQUEST_FILENAME} !-f
+			RewriteCond %{REQUEST_FILENAME} !-d
+			RewriteRule . index.php
+			DirectoryIndex index.php
+			Require all granted
+		</Directory>
+	</VirtualHost>
+Step 4. If windows create the hosts file record (C:/windows/system32/drivers/etc/host.file).
+	127.0.0.1	yii.andrew.local

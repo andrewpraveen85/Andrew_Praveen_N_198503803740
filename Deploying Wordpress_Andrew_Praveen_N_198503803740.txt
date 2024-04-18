@@ -1,0 +1,18 @@
+Step 1. Unzip Wordpress_Andrew_Praveen_N_198503803740.zip in htdocs in xamp server or www in wamp server.
+Step 2. Rename the folder as wp-andrew
+Step 3. In mysql create db yii_andrew_db, and import the wp_andrew_db.sql
+Step 4. Create a virtual host as below code.
+	<VirtualHost *:80>
+		ServerName wordpress.andrew.local
+		DocumentRoot "C:/xampp/htdocs/Andrew_Praveen_N_198503803740/wp-andrew"
+		<Directory "C:/xampp/htdocs/Andrew_Praveen_N_198503803740/wp-andrew">
+			RewriteEngine on
+			RewriteCond %{REQUEST_FILENAME} !-f
+			RewriteCond %{REQUEST_FILENAME} !-d
+			RewriteRule . index.php
+			DirectoryIndex index.php
+			Require all granted
+		</Directory>
+	</VirtualHost>
+Step 5. If windows create the hosts file record (C:/windows/system32/drivers/etc/host.file).
+	127.0.0.1	wordpress.andrew.local
